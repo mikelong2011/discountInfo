@@ -64,11 +64,11 @@
                          type:'post',
                          data:{'parent':type1},
                          dataType:'json',
-                         url:'/discount/index.php/Home/Goods/category',
+                         url:'/discountinfo/index.php/Home/Goods/category',
                          success:function(data){
                             if(data.length){
                                 for(var i=0;i<data.length;i++){
-                                    list2 ="<a href='/discount/index.php/home/goods/index/type/"+data[i].id+"'>";
+                                    list2 ="<a href='/discountinfo/index.php/home/goods/index/type/"+data[i].id+"'>";
                                     list2 += "<li class='list-group-item' id='" +data[i].id+"' style='text-align:left;text-indent:20px'>";
                                     list2 += data[i].type_name;
                                     list2 += "</li></a>";

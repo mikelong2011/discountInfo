@@ -42,7 +42,7 @@
                                      <div class="tel">成交/好评:<?php echo ($vo['recommend']); ?>/<?php echo ($vo['recommend']); ?></div>
                                      <div class="tel">电话:<?php echo ($vo['tel']); ?></div>
                                      
-                                     <a href="/discount/index.php/Home/Shop/shop_map/shop_id/<?php echo ($vo['id']); ?>">
+                                     <a href="/discountinfo/index.php/Home/Shop/shop_map/shop_id/<?php echo ($vo['id']); ?>">
                                         <div class="address">
                                             地址:<?php echo ($vo['address']); ?>
                                             <span class="glyphicon glyphicon-map-marker" ></span>
@@ -78,7 +78,7 @@
                     type:'post',
                     data:{'shop_id':shop_id},                    
                     dataType:'json',
-                    url:"/discount/index.php/Home/Shop/get_shop_images",
+                    url:"/discountinfo/index.php/Home/Shop/get_shop_images",
                     async:false,
                     success:function(data){
                         //处理结果

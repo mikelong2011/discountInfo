@@ -42,7 +42,7 @@
     <body>
     <div id="wrap" class="wrap">
         <div class="head row">
-            <a href="/discount/index.php/home/area/getprovince">
+            <a href="/discountinfo/index.php/home/area/getprovince">
             <div class="col-xs-3" style="overflow: hidden;white-space: nowrap;">
                 <?php  $area =''; if($_SESSION['town_name']!=''){ $area = $_SESSION['town_name']; }else{ if($_SESSION['dist_name']!=''){ $area = $_SESSION['dist_name']; }else{ if($_SESSION['city_name']){ $area = $_SESSION['city_name']; }else{ if($_SESSION['prov_name']){ $area = $_SESSION['prov_name']; }else{ $area = '选择城市'; } } } } echo mb_strlen($area,'utf8')>4?mb_substr($area,0,4,'utf8'):$area; ?>  
                 <span class="glyphicon glyphicon-chevron-down"></span>
@@ -75,7 +75,7 @@
         <div id="nav_bar" class="section" style="margin-top:-1px">
             <div class="section_body row">
                 <?php if(is_array($typeList)): foreach($typeList as $key=>$vo): ?><div  class="col-xs-3">
-                        <a href="/discount/index.php/home/goods/index/type1/<?php echo ($vo['id']); ?>">
+                        <a href="/discountinfo/index.php/home/goods/index/type1/<?php echo ($vo['id']); ?>">
                             <img src="<?php echo C("HOME_PATH") ?>/public/uploads/type/<?php echo ($vo['id']); ?>" class="nav_icon" />
                         </a>
                         <p style="margin-top:10px"><?php echo ($vo['type_name']); ?></p>
@@ -217,7 +217,7 @@
             $.ajax({
                 type: "get",
                 dataType: "json",
-                url: '/discount/index.php/home/goods/get_recommend_brands',
+                url: '/discountinfo/index.php/home/goods/get_recommend_brands',
                 success: function (data) {
                     if (data != "") {
                         //遍历对象数组，填充列表
@@ -226,7 +226,7 @@
                             //console.log(data[j]);
                             var rbs="<div class='row'>";
                             for(var i=0;i<data[j].length;i++){
-                                rbs+="<a href='/discount/index.php/home/goods/index/brand/"+data[j][i].id+"'>";
+                                rbs+="<a href='/discountinfo/index.php/home/goods/index/brand/"+data[j][i].id+"'>";
                                 rbs+="<div class='col-xs-4'>";
                                 rbs+="<img src='#' class='nav_icon' /><br/>";
                                 rbs+=data[j][i].brand_name+"</div>";
@@ -248,14 +248,14 @@
             $.ajax({
                 type: "get",
                 dataType: "json",
-                url: '/discount/index.php/home/goods/get_recommend_goods',
+                url: '/discountinfo/index.php/home/goods/get_recommend_goods',
                 success: function (data) {
                     if (data != "") {
                         //遍历对象数组，填充列表
                         console.log(data);
                         var rgs="<div class='row'>";
                         for(var i=0;i<data.length;i++){
-                            rgs+="<a href='/discount/index.php/home/goods/goods_info/id/"+data[i].id+"'>";
+                            rgs+="<a href='/discountinfo/index.php/home/goods/goods_info/id/"+data[i].id+"'>";
                             rgs+="<div class='col-xs-4'>";
                             rgs+="<img src='#' class='nav_icon' /><br/>";
                             rgs+=data[i].goods_name+"</div>";

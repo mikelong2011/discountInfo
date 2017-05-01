@@ -21,7 +21,7 @@
                 <div class="panel-body">
                     <?php if($_SESSION['member_id']) { ?>
                         <div class="space text-left">
-                        <a href="/discount/index.php/home/goods/addgoods" class="btn btn-primary" style="margin-left:10px">发布商品</a>
+                        <a href="/discountinfo/index.php/home/goods/addgoods" class="btn btn-primary" style="margin-left:10px">发布商品</a>
                         </div>
                     <?php } ?>
                     <div class="list">
@@ -37,7 +37,7 @@
                                     <span class="price">￥<?php echo ($vo['price']); ?></span>
                                     <span class="old_price"> ￥<?php echo ($vo['old_price']); ?></span>
                                  </div>
-                                <a href="/discount/index.php/home/shop/shop_map/shop_id/<?php echo ($vo['id']); ?>">
+                                <a href="/discountinfo/index.php/home/shop/shop_map/shop_id/<?php echo ($vo['id']); ?>">
                                 </a>
                             </div>
                         </div><?php endforeach; endif; ?>
