@@ -1,0 +1,164 @@
+body{
+    text-align: center;
+    margin: 0;
+    font-family:"Microsoft YaHei"; 
+    font-size:14px;    
+}
+a { 
+    text-decoration:none; 
+} 
+a:hover{
+
+    text-decoration: none;
+}
+.wrap{
+    max-width: 650px;
+    margin:0 auto;
+    text-align: center;
+    background-color:#eee;
+}
+.head,.footer{
+    background-color:#dff0d8;
+    border:1px solid #ccc;
+    height: 50px;
+    line-height: 50px;
+    margin: 0;
+    position: fixed;
+    width:100%;
+    max-width: 650px;
+    z-index: 10;
+}
+.head{
+    top:0;
+}
+.footer{
+    border-top: 1px solid #ccc;
+    bottom:0;
+}
+
+.list-group-item{
+    height:50px;
+    line-height:50px;
+    padding:0 10px;
+}
+
+.list-group-item:first-child{
+    margin-bottom:-1px;
+}
+.list-group-item:hover{
+    background-color:#f60;
+}
+.row  div{
+     padding: 0;
+}
+
+.ad_bar{
+    height:160px;
+    background-color:white;
+}
+.space{
+    height:49px;
+    line-height: 49px;
+    background-color: #fff;
+}
+.space_sm{
+    height:20px;
+}
+.input_bar{
+    height:50px;
+    margin:5px;
+}
+
+.form-control,.input-group{
+    height:40px
+    }
+.form-control{
+    border-radius: 20px;
+}
+.input-group{
+    margin:5px;
+}
+.input-group-addon{
+    border-radius:20px;
+
+}
+.panel{
+    margin-top:0;
+    background-color:#fff;
+}
+.panel-heading{
+    font-size: 18px;
+    position: fixed;
+    top:0;
+    width:100%;
+    max-width: 649px;
+    z-index: 20;
+    padding:0;
+    height:50px;
+    line-height: 50px;
+
+}
+.panel-body{
+    padding:0;
+}
+
+.clicked{
+    background-color:#f60;
+    font-size:large;
+}
+
+.list{
+    border-top:1px solid #ccc;
+}
+.list-item{
+    padding:10px 5px;
+    border-bottom:1px solid #ccc;
+}
+
+.list-group-item{
+    border-left:0;
+    border-right: 0;
+}
+.list-group-item:last-child,.list-group-item:first-child{
+    border-radius: 0;
+ 
+}
+
+.title,.address,.desc,.tel{
+    text-align: left;
+    text-indent: 10px;
+}
+.title{
+    font-size:20px;
+}
+.desc{
+    color:#f55;
+    overflow:hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.address{
+    margin-top:10px;
+        
+}
+.shop-image{
+    width:100%;
+    max-height: 140px; 
+}
+.shop-detail{
+    display: none;
+    border-top:1px solid #ccc;
+    background-color:#fff;
+}
+.price{
+    font-weight:bold;
+    color:#009;
+    font-size: 16px;
+}
+.old_price{
+    color:#ccc;
+    text-decoration: line-through;
+    font-style:italic;
+}
+
+

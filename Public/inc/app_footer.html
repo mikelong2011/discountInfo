@@ -1,0 +1,45 @@
+        <style>
+            .footer-icon{
+                height:20px;
+                line-height: 25px;
+                font-size:18px;
+                margin-top:5px
+            }
+        </style>
+        <div class="row" style="line-height:initial;">
+            <div class="col-xs-3">
+                <a href="<?php  echo __APP__;?>">
+                    <div class="footer-icon">
+                        <span class="glyphicon glyphicon-home"></span>
+                    </div>
+                </a>
+                <div style="height:25px">主页</div>
+            </div>
+
+            <a href="<?php echo __APP__?>/home/goods/category">
+                <div class="col-xs-3">
+                    <div class="footer-icon">
+                        <span class="glyphicon glyphicon-book"></span>
+                    </div>
+                    <div style="height:25px">分类</div>
+                </div>
+            </a>
+
+            <a href="<?php echo __APP__?>/home/shop">
+                <div class="col-xs-3">
+                    <div class="footer-icon">
+                        <span class="glyphicon glyphicon-tower"></span>
+                    </div>
+                    <div style="height:25px">门店</div>
+                </div>
+            </a>
+
+            <a href="<?php echo __APP__."/home/member"; ?>">
+                <div class="col-xs-3">
+                    <div class="footer-icon">
+                        <span class="glyphicon glyphicon-user"></span>
+                    </div>
+                    <div style="height:25px">会员</div>
+                </div>  
+            </a>                                  
+        </div>
