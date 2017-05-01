@@ -151,20 +151,20 @@
             </div>
             <div class="section_body">
                 <div class="row">
-                    <div class="col-xs-6">
+                    <div class="col-xs-6" id="recommand_goods_1">
                         <img src="#" style="width:100%;height:200px;" />
                     </div>
                     <div class="col-xs-6">
                         <div class="row">
-                            <div class="col-xs-12">
+                            <div class="col-xs-12" id="recommand_goods_2">
                                 <img src="#" style="width:100%;height:100px;" />
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-xs-6">
+                            <div class="col-xs-6" id="recommand_goods_3">
                                 <img src="#" style="width:100%;height:100px;" />
                             </div>
-                            <div class="col-xs-6">
+                            <div class="col-xs-6" id="recommand_goods_4">
                                 <img src="#" style="width:100%;height:100px;" />
                             </div>
                         </div>
@@ -275,25 +275,37 @@
                     if (data != "") {
                         //遍历对象数组，填充列表
                         console.log(data);
-                        var rgs="<div class='row'>";
+                        var rgs="";
                         for(var i=0;i<data.length;i++){
-                            rgs+="<a href='__APP__/home/goods/goods_info/id/"+data[i].id+"'>";
-                            rgs+="<div class='col-xs-4'>";
-                            rgs+="<img src='#' class='nav_icon' /><br/>";
+                            rgs+="<a href='__APP__/home/goods/goods_detail/id/"+data[i].id+"'>";
+                            rgs+="<div>";
+                            rgs+="<img src='#' style='width:100%;' /><br/>";
                             rgs+=data[i].goods_name+"</div>";
                             rgs+="</a>";
-                            if((i+1)%3==0 && i>0){
-                                 rgs+="</div><div class='row'>";
+                            console.log(rgs);
+                            switch(i){
+                                case 0:
+                                    $("#recommand_goods_1").html(rgs);
+                                    break;
+                                 case 1:
+                                    $("#recommand_goods_2").html(rgs);
+                                    break; 
+                                case 2:
+                                    $("#recommand_goods_3").html(rgs);
+                                    break; 
+                                 case 3:
+                                    $("#recommand_goods_4").html(rgs);
+                                    break;
+                                }
+                            rgs="";
                             }
                         }
-                        rgs+="</div>";
-                        $("#recommend_goods .section_body").html(rgs);
                     }
-                }
-            });            
+                });            
         }();
 
   })
+
     var fill_slide = function(r,rbs){
         switch(r){
             case 1:

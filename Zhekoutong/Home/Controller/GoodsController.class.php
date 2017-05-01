@@ -56,7 +56,7 @@ class GoodsController extends Controller {
     //取得推荐商品列表
     public  function get_recommend_goods(){
         $rgs = M("goods");
-        $result = $rgs -> where('recommend>0') ->limit(6) -> select();
+        $result = $rgs -> where('recommend>0') ->limit(4) -> select();
         $this -> ajaxReturn($result);
         //echo json_encode($result);
 
@@ -157,7 +157,10 @@ class GoodsController extends Controller {
         $this -> ajaxReturn($result);
     }
 
-
+    //商品详情
+    public function goods_detail(){
+        $this->display();
+    }
 
 }
 ?>

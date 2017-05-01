@@ -26,14 +26,14 @@
                 <div class="panel-body">
                     <div class="row space">
                         <div class="col-xs-4">
-                            <a class="btn btn-sm btn-primary" href="/tp3/index.php/Admin/Brand/addbrand">品牌新增</a>
+                            <a class="btn btn-sm btn-primary" href="/discountinfo/index.php/Admin/Brand/addbrand">品牌新增</a>
                         </div>
                     </div>
                     
                     <ul class="list-group">
                         <?php if(is_array($brand_list)): $i = 0; $__LIST__ = $brand_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li class="list-group-item">
                                 <span><?php echo ($vo['brand_name']); ?>  《<?php echo ($vo["type_name"]); ?>》</span>
-                                <!--<a style="float:right" href="/tp3/index.php/Admin/Brand/set_recommend/id/<?php echo ($vo["id"]); ?>/recommend/<?php echo ($vo["recommend"]); ?>">
+                                <!--<a style="float:right" href="/discountinfo/index.php/Admin/Brand/set_recommend/id/<?php echo ($vo["id"]); ?>/recommend/<?php echo ($vo["recommend"]); ?>">
                             <?php echo ($vo['recommend'] ? '取消推荐' : '推荐'); ?></a>-->
                             </li><?php endforeach; endif; else: echo "" ;endif; ?>
                     </ul>

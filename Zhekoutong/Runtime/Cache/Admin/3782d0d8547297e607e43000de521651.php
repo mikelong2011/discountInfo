@@ -21,7 +21,7 @@
 
             <div style="height:50px"></div>
 
-            <form action="/tp3/index.php/Admin/Brand/addbrand" method="post">
+            <form action="/discountinfo/index.php/Admin/Brand/addbrand" method="post">
             <div class="panel panel-info">
                 <div class="panel-heading">品牌新增</div>
                 <div class="panel-body">
@@ -68,7 +68,7 @@
                         type: "post",
                         dataType: "json",
                         data:{type1: post_data},
-                        url: '/tp3/index.php/home/goods/get_type2',
+                        url: '/discountinfo/index.php/home/goods/get_type2',
                         success: function (data) {
                             if (data != "") {
                                 //取得对象数组，填充小分类列表

@@ -21,7 +21,7 @@
 
             <div style="height:50px"></div>
 
-            <form action="/tp3/index.php/home/goods/addgoods" method="post">
+            <form action="/discountinfo/index.php/home/goods/addgoods" method="post">
             <div class="panel panel-info">
                 <div class="panel-heading">商品录入</div>
                 <div class="panel-body">
@@ -102,7 +102,7 @@
                         type: "post",
                         dataType: "json",
                         data:{type1: post_data},
-                        url: '/tp3/index.php/home/goods/get_type2',
+                        url: '/discountinfo/index.php/home/goods/get_type2',
                         success: function (data) {
                             if (data != "") {
                                 //取得对象数组，填充小分类列表
@@ -127,7 +127,7 @@
                         type: "post",
                         dataType: "json",
                         data:{type: post_data},
-                        url: '/tp3/index.php/home/goods/get_brands_by_type',
+                        url: '/discountinfo/index.php/home/goods/get_brands_by_type',
                         success: function (data) {
                             if (data != "") {
                                 //取得对象数组，填充品牌列表

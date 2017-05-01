@@ -11,4 +11,5 @@ return array(
 	'DB_PREFIX'=>'zhekt_',// 数据库表前缀
 	'DB_CHARSET'=>'utf8',// 数据库字符集	
 	'SHOW_PAGE_TRACE' => false,	
+	'HOME_PATH' => '/discountInfo', //网站根目录，一般是"/",这里是个二级目录	
 );

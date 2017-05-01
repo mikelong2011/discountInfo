@@ -19,7 +19,7 @@
         <div class="panel-heading">会员资料</div>
 
         <div class="panel-body">
-            <form method="post" action="/tp3/index.php/Home/Member/member_update" >
+            <form method="post" action="/discountinfo/index.php/Home/Member/member_update" >
                 <div class="space_sm" style="font-size:20px">
                     <?php echo $_SESSION['member_name'] ?>
                 </div>

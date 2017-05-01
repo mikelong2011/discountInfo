@@ -20,7 +20,7 @@
 
         <div class="panel panel-default">
             <div class="panel-body">
-                <form action="/discount/index.php/home/member/login" method="post">
+                <form action="/discountinfo/index.php/home/member/login" method="post">
                     <div class="input-group">
                         <span class="input-group-addon">会员名称</span>
                         <input type="text" name="name" required="required"  maxlength="20" class="form-control" />
@@ -32,7 +32,7 @@
                     <div class="space"></div>
                     <input class="form-control btn btn-primary" type="submit" value="登录" />
                     <div class="space"></div>
-                    <a href="/discount/index.php/home/member/regist" >我要注册会员</a>
+                    <a href="/discountinfo/index.php/home/member/regist" >我要注册会员</a>
                 </form>
             </div>
         </div>

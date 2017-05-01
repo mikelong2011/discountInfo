@@ -26,7 +26,7 @@
                 <div class="panel-body">
                     <div class="row space">
                         <div class="col-xs-4">
-                            <a class="btn btn-sm btn-primary" href="/tp3/index.php/Admin/Shop/add_shop">新门店注册</a>
+                            <a class="btn btn-sm btn-primary" href="/discountinfo/index.php/Admin/Shop/add_shop">新门店注册</a>
                         </div>  
                     </div> 
                     <div class="list">                 
@@ -38,7 +38,7 @@
                                  <div class="col-xs-8">
                                      <div class="title">
                                          <span><?php echo ($vo['shop_name']); ?></span>
-                                         <a href="/tp3/index.php/Admin/Shop/shop_update/shop_id/<?php echo ($vo['id']); ?>">
+                                         <a href="/discountinfo/index.php/Admin/Shop/shop_update/shop_id/<?php echo ($vo['id']); ?>">
                                              <span class="glyphicon glyphicon-edit"></span>
                                          </a>
                                     </div>
@@ -46,7 +46,7 @@
                                      <div class="tel">成交/好评:<?php echo ($vo['recommend']); ?>/<?php echo ($vo['recommend']); ?></div>
                                      <div class="tel">电话:<?php echo ($vo['tel']); ?></div>
                                      <div class="tel">状态:<?php echo ($vo['status'])?'正常经营':'未审核' ?></div>
-                                     <a href="/tp3/index.php/home/shop/shop_map/shop_id/<?php echo ($vo['id']); ?>">
+                                     <a href="/discountinfo/index.php/home/shop/shop_map/shop_id/<?php echo ($vo['id']); ?>">
                                         <div class="address">
                                             地址:<?php echo ($vo['address']); ?>
                                             <span class="glyphicon glyphicon-map-marker" ></span>

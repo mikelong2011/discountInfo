@@ -20,7 +20,7 @@
             <div style="height:50px"></div>
 
             <div id="shop_update">
-                <form action="/tp3/index.php/Admin/Shop/shop_update" method="post">
+                <form action="/discountinfo/index.php/Admin/Shop/shop_update" method="post">
                     <div class="panel panel-info">
                         <div class="panel-heading">门店维护</div>
                         <div class="panel-body">
@@ -73,7 +73,7 @@
             </div>
     
             <div id="upload_image" style="display: none">
-                <form method="POST" action="/tp3/index.php/Admin/Shop/upload_shop_image" enctype="multipart/form-data">                
+                <form method="POST" action="/discountinfo/index.php/Admin/Shop/upload_shop_image" enctype="multipart/form-data">                
                     <div class="panel panel-info">
                         <div class="panel-heading">图片管理</div>
                         <div class="panel-body">

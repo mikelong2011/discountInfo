@@ -30,7 +30,7 @@
             <div class="panel-heading">会员中心首页</div>
             <div class="panel-body" >
                 <div class="row" style="margin: 10px">
-                    <form id="photo_form" action="/tp3/index.php/Home/Member/upload_photo" method="POST" enctype="multipart/form-data">
+                    <form id="photo_form" action="/discountinfo/index.php/Home/Member/upload_photo" method="POST" enctype="multipart/form-data">
                         <div class="col-xs-6">
                             <img id="photo" src="<?php echo C("HOME_PATH")?>/public/uploads/member_photo/<?php echo $_SESSION['member_id'].'/'.$member['image']; ?>" style="height:100px;width:100px" />
                             <input id="photo_upload" type="file" name="photo_upload" style="display: none" />
@@ -53,7 +53,7 @@
                 
                 <div class="row bar">
                     <div class="col-xs-10" style="text-align: left;text-indent: 10px;">完善资料</div>
-                    <a href="/tp3/index.php/Home/Member/member_update">
+                    <a href="/discountinfo/index.php/Home/Member/member_update">
                         <div class="col-xs-2">
                             <span class="glyphicon glyphicon-chevron-right"></span>
                         </div>
@@ -61,7 +61,7 @@
                 </div>
                 <div class="row bar">
                     <div class="col-xs-10" style="text-align: left;text-indent: 10px;">我的品牌</div>
-                    <a href="/tp3/index.php/admin/brand/index/member/<?php echo $_SESSION['member_id'] ?>">
+                    <a href="/discountinfo/index.php/admin/brand/index/member/<?php echo $_SESSION['member_id'] ?>">
                         <div class="col-xs-2">
                             <span class="glyphicon glyphicon-chevron-right"></span>
                         </div>
@@ -69,7 +69,7 @@
                 </div>                
                 <div class="row bar">
                     <div class="col-xs-10" style="text-align: left;text-indent: 10px;">我的门店</div>
-                    <a href="/tp3/index.php/admin/shop/index/member/<?php echo $_SESSION['member_id'] ?>">
+                    <a href="/discountinfo/index.php/admin/shop/index/member/<?php echo $_SESSION['member_id'] ?>">
                         <div class="col-xs-2">
                             <span class="glyphicon glyphicon-chevron-right"></span>
                         </div>
@@ -78,7 +78,7 @@
 
                 <div class="row bar">
                     <div class="col-xs-10" style="text-align: left;text-indent: 10px;">我的商品</div>
-                    <a href="/tp3/index.php/home/goods/index/member/<?php echo $_SESSION['member_id'] ?>">
+                    <a href="/discountinfo/index.php/home/goods/index/member/<?php echo $_SESSION['member_id'] ?>">
                         <div class="col-xs-2">
                             <span class="glyphicon glyphicon-chevron-right"></span>
                         </div>
@@ -102,7 +102,7 @@
         $(function(){
             $("#logout").click(function(){
                 if(confirm("确定要退出登录吗？")){
-                    location.href="/tp3/index.php/Home/Member/logout";
+                    location.href="/discountinfo/index.php/Home/Member/logout";
                 }
             });
 
