@@ -20,7 +20,7 @@
                 <div class="panel-body">
                     <ul class="list-group">
  
-                        <?php if(is_array($townList)): foreach($townList as $key=>$vo): ?><a href="/tp3/index.php/home/area/setArea/town_id/<?php echo ($vo["id"]); ?>/town_name/<?php echo (urlencode($vo["shortname"])); ?>">
+                        <?php if(is_array($townList)): foreach($townList as $key=>$vo): ?><a href="/discountinfo/index.php/home/area/setArea/town_id/<?php echo ($vo["id"]); ?>/town_name/<?php echo (urlencode($vo["shortname"])); ?>">
                                 <li class="list-group-item"><?php echo ($vo["areaname"]); ?></li>
                             </a><?php endforeach; endif; ?>
                     </ul>

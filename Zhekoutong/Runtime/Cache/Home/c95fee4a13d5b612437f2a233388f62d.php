@@ -22,7 +22,7 @@
                 </div>
                 <div class="panel-body">
                 <ul class="list-group">
-                    <?php if(is_array($cityList)): foreach($cityList as $key=>$vo): ?><a href="/tp3/index.php/home/area/getdist/city_id/<?php echo ($vo["id"]); ?>/city_name/<?php echo (urlencode($vo["shortname"])); ?>">
+                    <?php if(is_array($cityList)): foreach($cityList as $key=>$vo): ?><a href="/discountinfo/index.php/home/area/getdist/city_id/<?php echo ($vo["id"]); ?>/city_name/<?php echo (urlencode($vo["shortname"])); ?>">
                             <li class="list-group-item"><?php echo ($vo["areaname"]); ?></li>
                         </a><?php endforeach; endif; ?>
                 </ul>

@@ -37,6 +37,24 @@
                 height:70px;
                 width:70px;
             }
+            .recommand_pic1,.recommand_pic2,.recommand_pic3,.recommand_pic4{
+            	width:100%;
+            	height:100px;
+            }
+            .recommand_pic1{
+            	height:200px;
+            }
+            .float_title{
+            	position: absolute;
+            	bottom: 3px;
+            	left:1%;
+            	width:98%;
+            	background-color: #f60;
+            	border:#444;
+				margin:0 auto;
+				overflow: hidden;
+
+            }            
         </style>
     </head>
     <body>
@@ -256,22 +274,21 @@
                         var rgs="";
                         for(var i=0;i<data.length;i++){
                             rgs+="<a href='/discountinfo/index.php/home/goods/goods_detail/id/"+data[i].id+"'>";
-                            rgs+="<div>";
-                            rgs+="<img src='#' style='width:100%;' /><br/>";
-                            rgs+=data[i].goods_name+"</div>";
-                            rgs+="</a>";
-                            console.log(rgs);
                             switch(i){
                                 case 0:
+                            		rgs+="<img src='#' class='recommand_pic1' /><div class='float_title'>"+data[i].goods_name+"</div></a>";                                
                                     $("#recommand_goods_1").html(rgs);
                                     break;
                                  case 1:
+                            		rgs+="<img src='#' class='recommand_pic2' /><div class='float_title'>"+data[i].goods_name+"</div></a>";                                 
                                     $("#recommand_goods_2").html(rgs);
                                     break; 
                                 case 2:
+                            		rgs+="<img src='#' class='recommand_pic3' /><div class='float_title'>"+data[i].goods_name+"</div></a>";                                
                                     $("#recommand_goods_3").html(rgs);
                                     break; 
                                  case 3:
+                            		rgs+="<img src='#' class='recommand_pic4' /><div class='float_title'>"+data[i].goods_name+"</div></a>";                                 
                                     $("#recommand_goods_4").html(rgs);
                                     break;
                                 }
